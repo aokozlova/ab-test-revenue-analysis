@@ -45,6 +45,7 @@ Evaluate the impact of a new payment flow on user monetisation and conversion be
 | B     | 59,763          | 6,803         | 314           | 394,974.00     | 1,257.88   | 4.62%    | 58.06     |
 
 ![Key metrics comparison](charts/Metrics.png)
+![ARPPU Distribution](charts/ARPPU_hist.png)
 
 
 
