@@ -35,21 +35,25 @@ Evaluate the impact of a new payment flow on user monetisation and conversion be
    - Checked data consistency across tables 
    - Excluded 149 users with no activity (not affected by the test)
 
- > Add visualisation:* histogram or barplot showing payment distribution by group.
-
 3. **Metric Calculation**
    - Calculated per-user CR, ARPPU, ARPU
    - Aggregated by group for summary comparison
 
-> Add visualisation:* side-by-side bar chart for key metrics by group.
-> Add tables
+  | Group | Assigned Users | Active Users | Paying Users | Total Revenue | ARPPU     | CR       | ARPU     |
+|:------|----------------:|--------------:|--------------:|---------------:|-----------:|----------:|----------:|
+| A     | 14,664          | 1,538         | 78            | 72,820.00      | 933.59     | 5.07%    | 47.35     |
+| B     | 59,763          | 6,803         | 314           | 394,974.00     | 1,257.88   | 4.62%    | 58.06     |
+
+![Key metrics comparison](charts/Metrics.png)
+
+
 
 4. **Statistical Testing**
-   - **CR:** z-test for proportions — no significant difference  
-   - **ARPPU:** Welch’s t-test — significant increase in test group  
-   - **ARPU:** bootstrap for difference in means — CI includes 0 → no significant change  
+   - **CR:** z-test for proportions - no significant difference  
+   - **ARPPU:** Welch's t-test - significant increase in test group  
+   - **ARPU:** bootstrap for difference in means - CI includes 0, no significant change  
 
-> Add visualisation:* bootstrap distribution of diff in ARPU with CI and zero line.
+![Key metrics comparison](charts/Bootstrap.png)
 
 ## Conclusions
 
