@@ -1,4 +1,6 @@
 # A/B Test: New Payment Flow
+[English version](README.md) | [Русская версия](README_RU.md)
+
 
 This project analyses data from an online learning platform that introduced a **new payment mechanic**.  
 The goal was to determine whether the change improved key monetisation metrics.
